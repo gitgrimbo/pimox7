@@ -141,7 +141,7 @@ hostnamectl set-hostname $HOSTNAME
 #### ADD SOURCE PIMOX7 + KEY & UPDATE & INSTALL RPI-KERNEL-HEADERS #######################################################################
 printf "# PiMox7 Development Repo
 deb https://global.mirrors.apqa.cn/proxmox/debian/pve bookworm port \n" > /etc/apt/sources.list.d/pimox.list
-curl https://raw.githubusercontent.com/pimox/pimox7/master/KEY.gpg |  apt-key add -
+curl https://mirrors.apqa.cn/proxmox/debian/pveport.gpg |  apt-key add -
 apt update && apt upgrade -y
 
 #### REMOVE DHCP, CLEAN UP ###############################################################################################################
